@@ -1,0 +1,14 @@
+prefix=/home/emb14/QtForIMX6
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Gui
+Description: Qt Gui module
+Version: 5.8.0
+Libs: -L${libdir} -lQt5Gui 
+Libs.private: -L/home/emb14/QtForIMX6/lib -lQt5Core -lrt -ldl -lpthread -lqtlibpng -L/home/emb14/QtForIMX6/lib -lQt5Core -lqtharfbuzz -lrt -lpthread -ldl  
+Cflags: -I${includedir}/QtGui -I${includedir}
+Requires: Qt5Core
+
